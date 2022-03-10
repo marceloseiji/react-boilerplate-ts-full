@@ -1,7 +1,7 @@
 {
   "name": "react-project-boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate to react projects",
+  "description": "A React.js boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
