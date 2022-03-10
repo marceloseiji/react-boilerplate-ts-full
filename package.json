@@ -1,0 +1,38 @@
+{
+  "name": "react-project-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate to react projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack-dev-server --mode development --open --hot",
+    "build": "npx webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marceloseiji/react-project-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Marcelo Seiji Ikuta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marceloseiji/react-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/marceloseiji/react-project-boilerplate#readme",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
