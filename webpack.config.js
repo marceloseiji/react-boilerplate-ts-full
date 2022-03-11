@@ -3,15 +3,20 @@ const path = require('path')
 module.exports = {
   // Entry point that indicates where
   // should the webpack starts bundling
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   mode: 'development',
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, // checks for .js or .jsx files
+        test: /\.(js|jsx|ts|tsx)$/, // checks for .js or .jsx files
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         options: { presets: ['@babel/env'] }
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader'
       },
       {
         test: /\.css$/, //checks for .css files
@@ -22,7 +27,9 @@ module.exports = {
 
   // Options for resolving module requests
   // extensions that are used
-  resolve: { extensions: ['*', '.js', '.jsx'] },
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.json', '.ts', '.tsx']
+  },
 
   // Output point is where webpack should
   // output the bundles and assets
