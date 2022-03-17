@@ -1,15 +1,17 @@
-import React from 'react'
-import '@testing-library/jest-dom'
-import { render, fireEvent, waitFor, screen } from '@testing-library/react'
+import React from 'react';
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
 
-import App from 'templates/main/App'
+import App from 'templates/main/App';
 
 test('load App and displays correct texts', () => {
-  render(<App />)
+  render(<App />);
 
-  const titleText = screen.getByRole('heading', { name: 'React Boilerplate' })
-  expect(titleText).toBeInTheDocument()
+  const titleText = screen.getByRole('heading', { name: 'React Boilerplate' });
+  expect(titleText).toBeInTheDocument();
 
-  const subtitleText = screen.getByRole('heading', { name: 'Now we can start out the project' })
-  expect(subtitleText).toBeInTheDocument()
-})
+  const subtitleText = screen.getByRole('heading', {
+    name: 'Now we can start out the project',
+  });
+  expect(subtitleText).toBeInTheDocument();
+});
