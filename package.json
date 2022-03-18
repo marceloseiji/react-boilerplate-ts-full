@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watch --env=jsdom",
     "start": "npx webpack-dev-server --mode development --open --hot",
-    "build": "npx webpack --mode production"
+    "build": "npx webpack --mode production",
+    "storybook": "start-storybook"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,8 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/react": "^6.4.19",
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
@@ -48,6 +51,7 @@
     "@typescript-eslint/parser": "^5.15.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-jest": "^27.5.1",
+    "babel-plugin-styled-components": "^2.0.6",
     "eslint": "^8.11.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
